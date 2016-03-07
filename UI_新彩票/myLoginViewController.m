@@ -7,6 +7,7 @@
 //
 
 #import "myLoginViewController.h"
+#import "mySettingTableView.h"
 
 @interface myLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *myQuit;
@@ -22,8 +23,6 @@
     UIImage *norm=[UIImage imageNamed:@"RedButton"];
     UIImage *high=[UIImage imageNamed:@"RedButtonPress"];
     
-    //norm=[norm stretchableImageWithLeftCapWidth:norm.size.width*0.5 topCapHeight:norm.size.height*0.5];
-   // high=[high stretchableImageWithLeftCapWidth:high.size.width*0.5 topCapHeight:high.size.height*0.5];
     norm=  [norm resizableImageWithCapInsets:UIEdgeInsetsMake( norm.size.width*0.5, norm.size.height*0.5,  norm.size.width*0.5, norm.size.height*0.5)];
     high=[high resizableImageWithCapInsets:UIEdgeInsetsMake(high.size.width*0.5, high.size.height*0.5,  high.size.width*0.5, high.size.height*0.5)];
     [self.myQuit setBackgroundImage:norm forState:UIControlStateNormal];
@@ -31,5 +30,7 @@
 }
 
 - (IBAction)ClickMySetting:(id)sender {
+    mySettingTableView *set=[[mySettingTableView alloc] init];
+    [self.navigationController pushViewController:set animated:YES];
 }
 @end

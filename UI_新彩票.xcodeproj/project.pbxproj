@@ -11,6 +11,12 @@
 		13424A8A1C8AC3F8000AE14B /* setBackStretch.m in Sources */ = {isa = PBXBuildFile; fileRef = 13424A891C8AC3F8000AE14B /* setBackStretch.m */; };
 		1352575C1C883FEB00C30B12 /* myViewNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1352575B1C883FEB00C30B12 /* myViewNavigationBar.m */; };
 		13665C721C8ABDBE0064BBBD /* myLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13665C711C8ABDBE0064BBBD /* myLoginViewController.m */; };
+		13708A3C1C8D721C005D25AE /* mySettingGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13708A3B1C8D721C005D25AE /* mySettingGroupModel.m */; };
+		13708A3F1C8D7239005D25AE /* mySettingSignModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13708A3E1C8D7239005D25AE /* mySettingSignModel.m */; };
+		13708A421C8D760E005D25AE /* myNotiSendTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 13708A411C8D760E005D25AE /* myNotiSendTVC.m */; };
+		13708A451C8D7DFB005D25AE /* mySettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13708A441C8D7DFB005D25AE /* mySettingCell.m */; };
+		13708A481C8D87D0005D25AE /* mySettingSignArrowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13708A471C8D87D0005D25AE /* mySettingSignArrowModel.m */; };
+		13708A4B1C8D87F3005D25AE /* mySettingSignSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13708A4A1C8D87F3005D25AE /* mySettingSignSwitchModel.m */; };
 		13B9B9DC1C88172600FF5841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9B9DB1C88172600FF5841 /* main.m */; };
 		13B9B9DF1C88172600FF5841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9B9DE1C88172600FF5841 /* AppDelegate.m */; };
 		13B9B9E21C88172600FF5841 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B9B9E11C88172600FF5841 /* ViewController.m */; };
@@ -45,6 +51,18 @@
 		1352575B1C883FEB00C30B12 /* myViewNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myViewNavigationBar.m; sourceTree = "<group>"; };
 		13665C701C8ABDBE0064BBBD /* myLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myLoginViewController.h; sourceTree = "<group>"; };
 		13665C711C8ABDBE0064BBBD /* myLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myLoginViewController.m; sourceTree = "<group>"; };
+		13708A3A1C8D721C005D25AE /* mySettingGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mySettingGroupModel.h; sourceTree = "<group>"; };
+		13708A3B1C8D721C005D25AE /* mySettingGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mySettingGroupModel.m; sourceTree = "<group>"; };
+		13708A3D1C8D7239005D25AE /* mySettingSignModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mySettingSignModel.h; sourceTree = "<group>"; };
+		13708A3E1C8D7239005D25AE /* mySettingSignModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mySettingSignModel.m; sourceTree = "<group>"; };
+		13708A401C8D760E005D25AE /* myNotiSendTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myNotiSendTVC.h; sourceTree = "<group>"; };
+		13708A411C8D760E005D25AE /* myNotiSendTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myNotiSendTVC.m; sourceTree = "<group>"; };
+		13708A431C8D7DFB005D25AE /* mySettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mySettingCell.h; sourceTree = "<group>"; };
+		13708A441C8D7DFB005D25AE /* mySettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mySettingCell.m; sourceTree = "<group>"; };
+		13708A461C8D87D0005D25AE /* mySettingSignArrowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mySettingSignArrowModel.h; sourceTree = "<group>"; };
+		13708A471C8D87D0005D25AE /* mySettingSignArrowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mySettingSignArrowModel.m; sourceTree = "<group>"; };
+		13708A491C8D87F3005D25AE /* mySettingSignSwitchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mySettingSignSwitchModel.h; sourceTree = "<group>"; };
+		13708A4A1C8D87F3005D25AE /* mySettingSignSwitchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mySettingSignSwitchModel.m; sourceTree = "<group>"; };
 		13B9B9D61C88172600FF5841 /* UI_新彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI_新彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B9B9DA1C88172600FF5841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B9B9DB1C88172600FF5841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +119,8 @@
 		13665C6F1C8ABD530064BBBD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13708A431C8D7DFB005D25AE /* mySettingCell.h */,
+				13708A441C8D7DFB005D25AE /* mySettingCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -267,6 +287,8 @@
 				13665C711C8ABDBE0064BBBD /* myLoginViewController.m */,
 				13F96A091C8D648900F83CF4 /* mySettingTableView.h */,
 				13F96A0A1C8D648900F83CF4 /* mySettingTableView.m */,
+				13708A401C8D760E005D25AE /* myNotiSendTVC.h */,
+				13708A411C8D760E005D25AE /* myNotiSendTVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +296,14 @@
 		13F96A081C8D63BB00F83CF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				13708A3A1C8D721C005D25AE /* mySettingGroupModel.h */,
+				13708A3B1C8D721C005D25AE /* mySettingGroupModel.m */,
+				13708A3D1C8D7239005D25AE /* mySettingSignModel.h */,
+				13708A3E1C8D7239005D25AE /* mySettingSignModel.m */,
+				13708A461C8D87D0005D25AE /* mySettingSignArrowModel.h */,
+				13708A471C8D87D0005D25AE /* mySettingSignArrowModel.m */,
+				13708A491C8D87F3005D25AE /* mySettingSignSwitchModel.h */,
+				13708A4A1C8D87F3005D25AE /* mySettingSignSwitchModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -383,12 +413,18 @@
 				13665C721C8ABDBE0064BBBD /* myLoginViewController.m in Sources */,
 				13B9B9E21C88172600FF5841 /* ViewController.m in Sources */,
 				130515FA1C89323C00972BAE /* myAllLoyViewController.m in Sources */,
+				13708A3C1C8D721C005D25AE /* mySettingGroupModel.m in Sources */,
 				13424A8A1C8AC3F8000AE14B /* setBackStretch.m in Sources */,
 				1352575C1C883FEB00C30B12 /* myViewNavigationBar.m in Sources */,
 				13B9B9DF1C88172600FF5841 /* AppDelegate.m in Sources */,
 				13F61D121C881963000D72D5 /* myViewTabBar.m in Sources */,
 				13F962381C892D38004D53C1 /* myTitleButton.m in Sources */,
+				13708A3F1C8D7239005D25AE /* mySettingSignModel.m in Sources */,
+				13708A421C8D760E005D25AE /* myNotiSendTVC.m in Sources */,
 				13F96A0B1C8D648900F83CF4 /* mySettingTableView.m in Sources */,
+				13708A481C8D87D0005D25AE /* mySettingSignArrowModel.m in Sources */,
+				13708A4B1C8D87F3005D25AE /* mySettingSignSwitchModel.m in Sources */,
+				13708A451C8D7DFB005D25AE /* mySettingCell.m in Sources */,
 				13B9B9DC1C88172600FF5841 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

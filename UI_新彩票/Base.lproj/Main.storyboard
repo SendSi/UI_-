@@ -338,18 +338,9 @@
                                 </state>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="BN3-pr-fRt">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m2L-Vq-e45">
-                                <rect key="frame" x="254" y="11" width="30" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" image="Mylottery_config">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="eec-VV-VxN">
                             <connections>
-                                <action selector="ClickMySetting:" destination="ois-BH-xuQ" id="Tuf-cz-aE1"/>
+                                <action selector="ClickMySetting:" destination="ois-BH-xuQ" id="MxX-Qk-hKT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
