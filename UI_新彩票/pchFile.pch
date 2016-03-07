@@ -1,0 +1,24 @@
+//
+//  pchFile.pch
+//  UI_新彩票
+//
+//  Created by scuplt on 16-3-3.
+//  Copyright (c) 2016年 itcast0413. All rights reserved.
+//
+
+#ifndef UI_____pchFile_pch
+#define UI_____pchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+//写代码
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue]>=7.0)
+#define NSLogs(...)  NSLog(__VA_ARGS__)
+#endif
+
+
+#endif
