@@ -11,6 +11,8 @@
 #import "mySettingSignModel.h"
 #import "myNotiSendTVC.h"
 #import  "mySettingCell.h"
+#import "mySettingSignArrowModel.h"
+#import "mySettingSignSwitchModel.h"
 
 @interface mySettingTableView ()
 @property (nonatomic,strong) NSMutableArray *dataModel;
@@ -36,11 +38,11 @@
         //        sound_Effect  声音效果
         //        MoreUpdate 检查新版本
         //        MoreHelp  帮助
-        mySettingSignModel *sign1=[mySettingSignModel initData_icon:@"MorePush" and_title:@"推送与提醒" and_vcClass:[ myNotiSendTVC class]];
-        mySettingSignModel *sign2=[mySettingSignModel initData_icon:@"handShake" and_title:@"摇一摇机选" and_vcClass:[ myNotiSendTVC class]];
-        mySettingSignModel *sign3=[mySettingSignModel initData_icon:@"sound_Effect" and_title:@"声音效果" and_vcClass:[ myNotiSendTVC class]];
-        mySettingSignModel *sign4=[mySettingSignModel initData_icon:@"MoreUpdate" and_title:@"检查新版本" and_vcClass:[ myNotiSendTVC class]];
-        mySettingSignModel *sign5=[mySettingSignModel initData_icon:@"MoreHelp" and_title:@"帮助" and_vcClass:[ myNotiSendTVC class]];
+        mySettingSignModel *sign1=[mySettingSignArrowModel initData_icon:@"MorePush" and_title:@"推送与提醒" and_vcClass:[ myNotiSendTVC class]];
+        mySettingSignModel *sign2=[mySettingSignSwitchModel initData_icon:@"handShake" and_title:@"摇一摇机选" and_vcClass:[ myNotiSendTVC class]];
+        mySettingSignModel *sign3=[mySettingSignSwitchModel initData_icon:@"sound_Effect" and_title:@"声音效果" and_vcClass:[ myNotiSendTVC class]];
+        mySettingSignModel *sign4=[mySettingSignArrowModel initData_icon:@"MoreUpdate" and_title:@"检查新版本" and_vcClass:[ myNotiSendTVC class]];
+        mySettingSignModel *sign5=[mySettingSignArrowModel initData_icon:@"MoreHelp" and_title:@"帮助" and_vcClass:[ myNotiSendTVC class]];
         
         mySettingGroupModel *groupModel1=[[mySettingGroupModel alloc]init];
         groupModel1.arrSingData=@[sign1,sign2,sign3 ];
@@ -91,6 +93,10 @@
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     mySettingGroupModel *model=self.dataModel[section];
     return model.head;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
 
