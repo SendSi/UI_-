@@ -30,7 +30,7 @@
         <!--Item-->
         <scene sceneID="kDw-aL-Abg">
             <objects>
-                <navigationController id="nyJ-gl-T9m" sceneMemberID="viewController">
+                <navigationController id="nyJ-gl-T9m" customClass="myNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="3tt-zd-MZf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JsI-tL-NXg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -107,7 +107,7 @@
         <!--Item-->
         <scene sceneID="RWh-Sp-0t3">
             <objects>
-                <navigationController id="otw-yP-6JG" sceneMemberID="viewController">
+                <navigationController id="otw-yP-6JG" customClass="myNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="XQQ-Ny-Olu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9BT-2x-Qwn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -197,7 +197,7 @@
         <!--Item-->
         <scene sceneID="0FK-JU-FCu">
             <objects>
-                <navigationController id="gdJ-1A-DhO" sceneMemberID="viewController">
+                <navigationController id="gdJ-1A-DhO" customClass="myNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="edk-CN-UIn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="B81-me-EqH">
@@ -250,7 +250,7 @@
         <!--Item-->
         <scene sceneID="b7p-IW-Qq5">
             <objects>
-                <navigationController id="lHl-Oz-2Jp" sceneMemberID="viewController">
+                <navigationController id="lHl-Oz-2Jp" customClass="myNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="0Rg-Ya-fAs"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cHz-cf-yMJ">
@@ -288,7 +288,7 @@
         <!--Item-->
         <scene sceneID="K0c-Oh-53u">
             <objects>
-                <navigationController id="cFg-qr-0wN" sceneMemberID="viewController">
+                <navigationController id="cFg-qr-0wN" customClass="myNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="DoW-PG-ojM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="csA-Tv-HUS">
@@ -306,7 +306,7 @@
         <!--我的彩票-->
         <scene sceneID="gdF-wp-uqH">
             <objects>
-                <viewController id="ois-BH-xuQ" customClass="myLoginViewController" sceneMemberID="viewController">
+                <viewController id="ois-BH-xuQ" customClass="myLoginView_C" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aIu-rq-b7b"/>
                         <viewControllerLayoutGuide type="bottom" id="qw8-tb-Y30"/>

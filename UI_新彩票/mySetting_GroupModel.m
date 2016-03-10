@@ -6,8 +6,8 @@
 //  Copyright (c) 2016年 itcast0413. All rights reserved.
 //
 
-#import "mySettingGroupModel.h"
+#import "mySetting_GroupModel.h"
 
-@implementation mySettingGroupModel
+@implementation mySetting_GroupModel
 
 @end

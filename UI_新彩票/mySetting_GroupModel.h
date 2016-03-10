@@ -8,7 +8,7 @@
 /** 组的model 包含了 头部 尾部 中间 */
 #import <Foundation/Foundation.h>
 
-@interface mySettingGroupModel : NSObject
+@interface mySetting_GroupModel : NSObject
 /** 尾部 */
 @property (copy,nonatomic) NSString * footer;
 

@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface mySettingSignModel : NSObject
+typedef void(^updataOption) ();
+/** Item父类 行的样式 */
+@interface mySettingItem_Model : NSObject
 
 @property (copy,nonatomic) NSString *icon;
 @property (copy,nonatomic) NSString *title;
 @property (assign,nonatomic) Class vcClass;
 
+@property (copy,nonatomic) updataOption option;
 
-+(instancetype) initData_icon:(NSString *)icon and_title:(NSString *)title and_vcClass:(Class )vc;
-
-
+/** 图标 文字 */
++(instancetype) initData_icon:(NSString *)icon and_title:(NSString *)title ;
 @end

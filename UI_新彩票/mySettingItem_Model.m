@@ -7,16 +7,16 @@
 //
 
 /** 每行的内容*/
-#import "mySettingSignModel.h"
+#import "mySettingItem_Model.h"
 /** 每行的内容*/
-@implementation mySettingSignModel
+@implementation mySettingItem_Model
 
-+(instancetype) initData_icon:(NSString *)icon and_title:(NSString *)title and_vcClass:(Class )vc{
-   mySettingSignModel *mySign=[[self alloc]init];
+
+
++(instancetype) initData_icon:(NSString *)icon and_title:(NSString *)title {
+    mySettingItem_Model *mySign=[[self alloc]init];
     mySign.icon=icon;
     mySign.title=title;
-    mySign.vcClass=vc;    
     return mySign;
 }
-
 @end

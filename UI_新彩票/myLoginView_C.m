@@ -6,16 +6,16 @@
 //  Copyright (c) 2016年 itcast0413. All rights reserved.
 //
 
-#import "myLoginViewController.h"
-#import "mySettingTableView.h"
+#import "myLoginView_C.h"
+#import "mySetting_C.h"
 
-@interface myLoginViewController ()
+@interface myLoginView_C ()
 @property (weak, nonatomic) IBOutlet UIButton *myQuit;
 - (IBAction)ClickMySetting:(id)sender;
 
 @end
 
-@implementation myLoginViewController
+@implementation myLoginView_C
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,7 +30,7 @@
 }
 
 - (IBAction)ClickMySetting:(id)sender {
-    mySettingTableView *set=[[mySettingTableView alloc] init];
+    mySetting_C *set=[[mySetting_C alloc] init];
     [self.navigationController pushViewController:set animated:YES];
 }
 @end

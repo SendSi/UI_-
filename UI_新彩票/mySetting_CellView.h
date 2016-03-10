@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class  mySettingSignModel;
-@interface mySettingCell : UITableViewCell
+@class  mySettingItem_Model;
+@interface mySetting_CellView : UITableViewCell
 
-@property (strong,nonatomic) mySettingSignModel *signModel;
+@property (strong,nonatomic) mySettingItem_Model *signModel;
 
 +(instancetype)initInstance:(UITableView *)tableView;
 

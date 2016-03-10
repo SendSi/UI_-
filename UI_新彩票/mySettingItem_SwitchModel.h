@@ -6,8 +6,8 @@
 //  Copyright (c) 2016年 itcast0413. All rights reserved.
 //
 /** 开关行 */
-#import "mySettingSignModel.h"
+#import "mySettingItem_Model.h"
 /** 开关行 */
-@interface mySettingSignSwitchModel : mySettingSignModel
+@interface mySettingItem_SwitchModel : mySettingItem_Model
 
 @end

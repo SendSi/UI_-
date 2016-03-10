@@ -28,35 +28,25 @@
          NSString *sel  = [NSString stringWithFormat:@"TabBar%dSel",i+1];
         [myview AddButtonOneFrom:nor andSel:sel];
     }
-    //全局导航的头部样式 img
-    UINavigationBar *navb=[UINavigationBar appearance];
-    if(iOS7){
-    [navb setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
-    }
-    else{
-            [navb setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
-    }
-    //设置头部 字体颜色与大小
-    NSMutableDictionary *attr=[NSMutableDictionary dictionary];
-    attr[NSForegroundColorAttributeName]=[UIColor whiteColor];
-    attr[NSFontAttributeName]=[UIFont systemFontOfSize:20];
-    [navb setTitleTextAttributes:attr];
-    
-    UIBarButtonItem     *navItem=[UIBarButtonItem appearance];
-NSMutableDictionary *dic=    [NSMutableDictionary dictionary];
-    dic[NSForegroundColorAttributeName]=[UIColor grayColor];
-    dic[NSFontAttributeName]=[UIFont systemFontOfSize:16];
-    [navItem setTitleTextAttributes:dic forState:UIControlStateNormal];
-    [navItem setBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:    UIBarMetricsDefault];
-      [navItem setBackButtonBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:    UIBarMetricsDefault];
-   // navItem setBackButtonBackgroundImage:<#(UIImage *)#> forState:<#(UIControlState)#> barMetrics:<#(UIBarMetrics)#>
+    // navItem setBackButtonBackgroundImage:<#(UIImage *)#> forState:<#(UIControlState)#> barMetrics:<#(UIBarMetrics)#>
 }
+
+/**
+ *  重写这个方法,能拦截所有的push操作
+ *
+ */
+//- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+//{
+//    viewController.hidesBottomBarWhenPushed = YES;
+//    [super pushViewController:viewController animated:animated];
+//}
 
 #pragma mark 代理
 -(void)viewTabBarClick:(myViewTabBar *)views andFrom:(int)froms andTO:(int)tos{
     //NSLogs(@"%d9---%d",froms,tos);
     self.selectedIndex=tos;
 }
+
 
 
 @end
