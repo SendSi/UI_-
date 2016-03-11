@@ -17,7 +17,7 @@
 #import "MBProgressHUD+MJ.h"
 #import "myProduct_CollectionView_C.h"
 @interface mySetting_TableVeiw_C ()
-@property (nonatomic,strong) NSMutableArray *dataModel;
+
 @end
 
 @implementation mySetting_TableVeiw_C
@@ -32,7 +32,12 @@
     return [super initWithStyle:UITableViewStyleGrouped];
 }
 
-
+-(NSMutableArray *)dataModel{
+    if(_dataModel==nil){
+        _dataModel=[NSMutableArray array];
+    }
+    return _dataModel;
+}
 
 #pragma mark - Table view data source
 
@@ -63,12 +68,18 @@
 
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
     mySetting_GroupModel *model=self.dataModel[section];
-    return model.footer;
+//    if(model!=nil)
+//        return model.footer;
+//    else
+        return @"";
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     mySetting_GroupModel *model=self.dataModel[section];
-    return model.head;
+//    if(model!=nil)
+//    return model.head;
+//    else
+        return @"";
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

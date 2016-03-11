@@ -44,6 +44,7 @@
 -(void)setSignModel:(mySettingItem_Model *)signModel{
     _signModel=signModel;
     self.textLabel.text=signModel.title;
+    if(signModel.icon!=nil)
     self.imageView.image=[UIImage imageNamed: signModel.icon ];//以上设置左边
     
     //设置右边

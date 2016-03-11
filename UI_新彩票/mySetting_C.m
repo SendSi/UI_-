@@ -15,19 +15,20 @@
 #import "MBProgressHUD+MJ.h"
 #import "myProduct_CollectionView_C.h"
 #import "mySetting_GroupModel.h"
+#import "myPushRemind_TableView_C.h"
+#import "myHelpTableView_C.h"
 @interface mySetting_C ()
-@property (nonatomic,strong) NSMutableArray *dataModel;
 @end
 
 @implementation mySetting_C
 -(void)viewDidLoad{
     [super viewDidLoad];
-    [self dataModel];
+    [self setDataGroup0];
     self.title=@"设置";
+
 }
 
--(NSMutableArray *)dataModel{
-    if(_dataModel==nil){
+-(void)setDataGroup0{
         //        MorePush
         //        handShake
         //        sound_Effect  声音效果
@@ -38,7 +39,7 @@
         //产品推推荐
         //关于
         //多态的好外,,,,右边是 父类   左边是子类
-        mySettingItem_Model *sign1=[mySettingItem_ArrowModel initData_icon:@"MorePush" and_title:@"推送与提醒" and_vcClass:[ myNotiSendTVC class]];
+        mySettingItem_Model *sign1=[mySettingItem_ArrowModel initData_icon:@"MorePush" and_title:@"推送与提醒" and_vcClass:[  myPushRemind_TableView_C class]];
         mySettingItem_Model *sign2=[mySettingItem_SwitchModel initData_icon:@"handShake" and_title:@"摇一摇机选" ]   ;     mySettingItem_Model *sign3=[mySettingItem_SwitchModel initData_icon:@"sound_Effect" and_title:@"声音效果" ];        mySettingItem_Model *sign4=[mySettingItem_Model initData_icon:@"MoreUpdate" and_title:@"检查新版本" ];
         sign4.option=^(){
             [MBProgressHUD showMessage:@"正在检查中..."];
@@ -47,8 +48,9 @@
                 [MBProgressHUD showError:@"当前已是最新版本"];
             });
         };
+
         
-        mySettingItem_Model *sign5=[mySettingItem_ArrowModel initData_icon:@"MoreHelp" and_title:@"帮助" and_vcClass:[ myNotiSendTVC class]];
+        mySettingItem_Model *sign5=[mySettingItem_ArrowModel initData_icon:@"MoreHelp" and_title:@"帮助" and_vcClass:[ myHelpTableView_C class]];
         mySettingItem_Model *sign6=[mySettingItem_ArrowModel initData_icon:@"MoreHelp" and_title:@"分享" and_vcClass:[ myNotiSendTVC class]];
         mySettingItem_Model *sign7=[mySettingItem_ArrowModel initData_icon:@"MoreHelp" and_title:@"查看消息" and_vcClass:[ myNotiSendTVC class]];
         mySettingItem_Model *sign8=[mySettingItem_ArrowModel initData_icon:@"MoreHelp" and_title:@"产品推推荐" and_vcClass:[ myProduct_CollectionView_C class]];
@@ -58,12 +60,9 @@
         groupModel1.arrSingData=@[sign1,sign2,sign3 ];
         mySetting_GroupModel *groupModel2=[[mySetting_GroupModel alloc]init];
         groupModel2.arrSingData=@[sign4,sign5,sign6,sign7,sign8,sign9];
-        NSMutableArray *arrC=[NSMutableArray array];
-        [arrC addObject:groupModel1];
-        [arrC addObject:groupModel2];
-        _dataModel=arrC;
-    }
-    return  _dataModel;
+
+    [self.dataModel addObject:groupModel1];
+    [self.dataModel addObject:groupModel2];
 }
 
 

@@ -8,7 +8,7 @@
 
 #import "myLoginView_C.h"
 #import "mySetting_C.h"
-
+#import "myPushRemind_TableView_C.h"
 @interface myLoginView_C ()
 @property (weak, nonatomic) IBOutlet UIButton *myQuit;
 - (IBAction)ClickMySetting:(id)sender;
@@ -32,5 +32,8 @@
 - (IBAction)ClickMySetting:(id)sender {
     mySetting_C *set=[[mySetting_C alloc] init];
     [self.navigationController pushViewController:set animated:YES];
+    
+//    myPushRemind_TableView_C *set=[[myPushRemind_TableView_C alloc] init];
+// [self.navigationController pushViewController:set animated:YES];
 }
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface mySetting_TableVeiw_C : UITableViewController
-
+@property (nonatomic,strong) NSMutableArray *dataModel;
 @end
